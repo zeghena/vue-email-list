@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      mail: "no mail",
+      mails: [],
     };
   },
   mounted() {
@@ -14,7 +14,7 @@ createApp({
         .then((response) => {
           // handle success
           console.log(response.data.response);
-          this.mail = response.data.response;
+          this.mails.push(response.data.response);
         });
     }
     /*
