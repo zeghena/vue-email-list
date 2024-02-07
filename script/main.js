@@ -15,6 +15,7 @@ createApp({
           // handle success
           console.log(response.data.response);
           this.mails.push(response.data.response);
+          console.log(this.mails[i]);
         });
     }
     /*

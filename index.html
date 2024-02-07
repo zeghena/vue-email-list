@@ -36,7 +36,9 @@
 
 <body>
     <div id="app">
-        {{mails}}
+        <ul>
+            <li v-for="mail in mails" :key="mail">{{ mail }}</li>
+        </ul>
     </div>
 
 </body>
